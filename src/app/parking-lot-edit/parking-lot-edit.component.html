@@ -1,0 +1,49 @@
+<div class="create-account">
+    <div mat-dialog-title>
+        <h1>Parking Lots Form</h1>
+    </div>
+    <form [formGroup]="mallsForm" (ngSubmit)="onSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Parking Lot Name</mat-label>
+                <input matInput type="text"ParkingLot formControlName="spaceName">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label> Location</mat-label>
+                <input matInput placeholder="Ex. 120" formControlName="location">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label> Description </mat-label>
+                <input matInput placeholder="Ex. 120" formControlName="description">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label> Security</mat-label>
+                <input matInput placeholder="Ex. 120" formControlName="securityFeatures">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label> Slots</mat-label>
+                <input matInput placeholder="Ex. 120" formControlName="availableSlots">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label> Hourly Charge</mat-label>
+                <input matInput placeholder="Ex. 120" formControlName="amount">
+            </mat-form-field>
+        </div>
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+        <button mat-raised-button color="primary" type="submit">{{data? 'Update' : 'Save' }}</button>
+    </div>
+    </form>
+</div>

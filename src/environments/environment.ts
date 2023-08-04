@@ -4,5 +4,6 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: true,
+  API_KEY: 'coinranking53fb10defda9ee32658e74ff804791f6258c2b6f6195e566'
 };

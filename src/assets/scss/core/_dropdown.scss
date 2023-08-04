@@ -85,7 +85,6 @@
     width: auto;
 
     display: flex;
-    flex-flow: nowrap;
     align-items: center;
     color: $bmd-dropdown-link-color;
     font-weight: normal;
@@ -116,9 +115,9 @@
   a:hover,
   a:focus,
   a:active {
-    @include shadow-small-color($brand-primary);
-    background-color: $brand-primary;
-    color: #FFFFFF;
+    @include shadow-small-color(#e7e7e7);
+    background-color: #e7e7e7;
+    color: black;
   }
 }
 

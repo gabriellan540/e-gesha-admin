@@ -1,0 +1,19 @@
+/* .navbar{
+    width: 800px;
+} */
+
+mat-icon{
+    color: #a9afbb;
+    font-size: 19px;
+    line-height:28px;
+    margin-right: 4px;
+}
+
+/* .navbar-collapse{ */
+    /* float: right; */
+    /* right: 200px; */
+/* } */
+
+dropdown-menu a:hover{
+    background-color: #a9afbb;
+}

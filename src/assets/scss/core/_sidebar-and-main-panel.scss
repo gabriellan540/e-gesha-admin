@@ -104,22 +104,6 @@
             }
         }
     }
-
-    .logo-tim{
-        border-radius: 50%;
-        border: 1px solid #333;
-        display: block;
-        height: 61px;
-        width: 61px;
-        float: left;
-        overflow: hidden;
-
-        img{
-            width: 60px;
-            height: 60px;
-        }
-    }
-
     .nav{
         margin-top: 20px;
         display: block;
@@ -240,7 +224,7 @@
 
     .logo{
         padding: 15px 0px;
-        margin: 0;
+        // margin: 0;
         display: block;
         position: relative;
         z-index: 4;
@@ -259,9 +243,9 @@
         p{
             float: left;
             font-size: 20px;
-            margin: 10px 10px;
+            // margin: 10px 10px;
             color: $white-color;
-            line-height: 20px;
+            // line-height: 20px;
         }
 
         .simple-text{
@@ -278,22 +262,6 @@
             display: block;
         }
     }
-
-    .logo-tim{
-        border-radius: 50%;
-        border: 1px solid #333;
-        display: block;
-        height: 61px;
-        width: 61px;
-        float: left;
-        overflow: hidden;
-
-        img{
-            width: 60px;
-            height: 60px;
-        }
-    }
-
 
     &[data-background-color="black"]{
         @include sidebar-background-color($gray-base, $white-color);

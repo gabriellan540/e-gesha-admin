@@ -258,73 +258,9 @@
         .icon i{
             color: $white-color;
         }
+      }
 
-        .icon i{
-            border-color: rgba(255, 255, 255, 0.25);
-        }
-        .author a,
-        .stats,
-        .card-category,
-        .card-description{
-            color: $white-transparent;
-        }
-
-        .author a{
-            &:hover,
-            &:focus,
-            &:active{
-                color: $white-color;
-            }
-        }
-    }
-
-    .author{
-        .avatar{
-            width: 30px;
-            height: 30px;
-            overflow: hidden;
-            border-radius: 50%;
-            margin-right: 5px;
-        }
-
-        a{
-            color: $black-color;
-            text-decoration: none;
-
-            .ripple-container{
-                display: none;
-            }
-        }
-    }
-
-    .card-category-social{
-        .fa{
-            font-size: 24px;
-            position: relative;
-            margin-top: -4px;
-            top: 2px;
-            margin-right: 5px;
-        }
-
-        .material-icons{
-            position: relative;
-            top: 5px;
-        }
-    }
-
-    &[class*="bg-"],
-    &[class*="bg-"] .card-body{
-        border-radius: $border-radius-large;
-
-        h1,
-        h2,
-        h3{
-          small{
-              color: $white-transparent;
-          }
-        }
-    }
-
+        
     .card-stats{
         background: transparent;
         display: flex;

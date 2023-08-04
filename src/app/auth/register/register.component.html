@@ -1,0 +1,38 @@
+<div class="main-body main-content container d-flex">
+  <img src="./assets/images/dash.jpg"  alt="image of dashboard page">
+  <mat-card>
+    <div mat-dialog-title>
+      <h2>Create account</h2>
+    </div>
+    <form [formGroup]="registerform" (ngSubmit)="proceedregister()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput type="text" formControlName="name">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" formControlName="password">
+            </mat-form-field>
+        </div>
+        <div class="row">
+          <mat-form-field appearance="outline">
+              <mat-label>Confirm Password</mat-label>
+              <input matInput type="password" formControlName="confirmPassword">
+          </mat-form-field>
+      </div>
+      <div >
+          <button mat-raised-button class="submit-btn">Submit</button>
+      </div>
+      <hr style="margin-left: 5px;">
+      <div>
+          <a class="new-user" routerLink="/login">Already have an account? Login</a>
+      </div>
+    </div>
+    </form>
+
+  </mat-card>
+</div>

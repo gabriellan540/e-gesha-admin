@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 
 declare const $: any;
 declare interface RouteInfo {
@@ -9,13 +10,10 @@ declare interface RouteInfo {
 }
 export const ROUTES: RouteInfo[] = [
     { path: '/dashboard', title: 'Dashboard',  icon: 'dashboard', class: '' },
-    { path: '/user-profile', title: 'User Profile',  icon:'person', class: '' },
-    { path: '/table-list', title: 'Table List',  icon:'content_paste', class: '' },
-    { path: '/typography', title: 'Typography',  icon:'library_books', class: '' },
-    { path: '/icons', title: 'Icons',  icon:'bubble_chart', class: '' },
-    { path: '/maps', title: 'Maps',  icon:'location_on', class: '' },
-    { path: '/notifications', title: 'Notifications',  icon:'notifications', class: '' },
-    { path: '/upgrade', title: 'Upgrade to PRO',  icon:'unarchive', class: 'active-pro' },
+    { path: '/employees', title: 'Users',  icon:'person', class: '' },
+    { path: '/bookings', title: 'Bookings',  icon:'event', class: '' },
+    { path: '/malls', title: 'Parking lots',  icon:'local_parking', class: '' },
+    { path: '/slots', title: 'Parking spots',  icon:'local_parking', class: '' },
 ];
 
 @Component({
@@ -26,7 +24,9 @@ export const ROUTES: RouteInfo[] = [
 export class SidebarComponent implements OnInit {
   menuItems: any[];
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
@@ -37,4 +37,5 @@ export class SidebarComponent implements OnInit {
       }
       return true;
   };
+  
 }

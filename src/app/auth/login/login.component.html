@@ -1,0 +1,31 @@
+<div class="main-body container d-flex justify-content-around">
+    <img src="./assets/images/dash.jpg"  alt="image of dashboard page">
+    <mat-card>
+        <div mat-dialog-title>
+            <h2>Login</h2>
+        </div>
+        <form [formGroup]="loginform" (ngSubmit)="proceedlogin()">
+        <div mat-dialog-content class="content">
+            <div class="row">
+                <mat-form-field appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="text" formControlName="email">
+                </mat-form-field>
+            </div>
+            <div class="row">
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" formControlName="password">
+                </mat-form-field>
+            </div>
+            <div >
+                <button mat-raised-button class="login-btn">Login</button>
+            </div>
+            <hr style="margin-left: 5px;">
+            <div>
+                <a class="new-user" routerLink="/register">Create account</a>
+            </div>
+        </div>
+        </form>
+    </mat-card>
+</div>

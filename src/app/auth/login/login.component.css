@@ -1,0 +1,43 @@
+.main-body{
+    width: 800px;
+    margin-top: 80px;
+}
+
+img{
+    height: 400px;
+    width: 400px;
+    border-radius: 10px 0 0 10px;
+}
+
+mat-card{
+    width: 400px;
+    border-radius: 0 10px 10px 0;
+}
+
+.content {
+    padding-top: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row mat-form-field {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.login-btn{
+    width: 98%;
+    background-color: orange;
+    color: white;
+    margin-left: 5px;
+    height: 38px;
+}
+
+.new-user{
+    color: orange;
+    margin-left: 5px;
+}
