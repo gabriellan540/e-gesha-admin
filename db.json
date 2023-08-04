@@ -106,10 +106,10 @@
       "isactive": true
     },
     {
-      "id": "Aaaaa",
+      "id": "Richard",
       "username": "Aaaaa",
-      "password": "aa",
-      "email": "aa@gmail.com",
+      "password": "richard",
+      "email": "richard@gmail.com",
       "role": "admin",
       "isactive": true
     }
