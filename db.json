@@ -30,7 +30,7 @@
     {
       "firstName": "Joseph",
       "lastName": "Maina",
-      "phoneNumber": "0712121212",
+      "phoneNumber": "0712141212",
       "email": "maina@gmail.com",
       "password": "b",
       "confirmPassword": "b",
@@ -62,6 +62,14 @@
       "spotName": "A11",
       "parkingLot": "YMCA",
       "id": 2
+    },
+    {
+      "customerName": "James",
+      "timeSlot": "1200-1600",
+      "amountPaid": 400,
+      "parkingLot": "Two Rivers",
+      "spotName": "B13",
+      "id": 3
     }
   ],
   "malls": [

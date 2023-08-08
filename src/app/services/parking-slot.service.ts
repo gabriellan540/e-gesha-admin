@@ -1,28 +1,31 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from 'environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ParkingSlotService {
 
-  constructor(private _http : HttpClient) {}
+  constructor(private http : HttpClient) {}
+
+  apiUrl= environment.apiUrl + '/slots'
 
   addSpot(data: any): Observable<any> {
-    return this._http.post('http://localhost:3000/slots', data);
+    return this.http.post(this.apiUrl, data);
   }
 
   updateSpot(id: number, data: any): Observable<any> {
-    return this._http.put(`http://localhost:3000/slots/${id}`, data);
+    return this.http.put(this.apiUrl+'/'+id, data);
   }
 
   getSpotList(): Observable<any> {
-    return this._http.get('http://localhost:3000/slots');
+    return this.http.get(this.apiUrl);
   }
 
   deleteSpot(id: number): Observable<any>{
-    return this._http.delete(`http://localhost:3000/slots/${id}`);
+    return this.http.delete(this.apiUrl+'/'+id);
   }
 }
 
